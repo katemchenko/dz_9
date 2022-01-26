@@ -1,0 +1,157 @@
+*,html,body{
+margin: 0px;
+padding: 0px;
+list-style: none;
+box-sizing: border-box;
+text-decoration: none;
+font-family: Arial, Helvetica, sans-serif;
+}
+.menu{
+  background: #fddcb1;
+  font-size: 0px;
+  position: relative;
+}
+.menu-top{
+  font-size: 12px;
+  font-weight: 100;
+  display: inline-block;
+  position: relative;
+}
+.menutop-link{
+  padding: 10px 60px;
+  background: #000;
+  color: #fff;
+  display: block; 
+}
+.menusub{
+  position: absolute;
+  top: 100%;
+  left:0;
+  width:100%;
+  display: none;
+}
+.menusub-link{
+  background: #fff;
+  color: #5f5f5f;
+  border: 1px solid rgba(182, 182, 182, .2);
+  display: block; 
+  font-size: 12px;
+  padding: 10px;
+}
+
+.menu-top:first-child .menutop-link:hover{
+  color: #6a2dc6;
+}
+.menu-top:nth-child(2) .menutop-link:hover{
+color: #a969ff;
+}
+.menu-top:nth-child(3) .menutop-link:hover{
+  color: #fd50da;
+}
+.menu-top:nth-child(4) .menutop-link:hover{
+  color: #ff6866; 
+}
+.menu-top:last-child .menutop-link:hover{
+  color: #fb9879;
+}
+
+.menu-top:hover .menusub{
+  display: block;
+}
+.menusub-link:hover{
+  background: #000;
+  color: #fff;
+}
+
+.ipad:hover .ipad-inner{
+  display: block;
+}
+.iphone:hover .iphone-inner{
+  display: block;
+}
+.airpods:hover .airpods-inner{
+  display: block;
+}
+.mac:hover .mac-inner{
+  display: block;
+}
+.mac-inner:hover .mac-inner-inner{
+  display: block;
+}
+.xiaomiph:hover .xiaomiph-inner{
+  display: block;
+} 
+.redmiph:hover .redmiph-inner{
+  display: block;
+} 
+
+.audio:hover .audio-inner{
+  display: block;
+} 
+
+.menuinner{
+  position: absolute;
+  width:100%;
+  display: none;
+}
+.ipad-inner{
+  top: 0;
+  left:100%;
+}
+.iphone-inner{
+  top: 35px;
+  left:100%;
+}
+.airpods-inner{
+  top: 70px;
+  left:100%;
+}
+.mac-inner{ 
+  top: 107px;
+  left:100%;
+}
+.mac-inner-inner{
+  top: 0px;
+  left:100%;
+}
+.xiaomiph-inner{
+  top: 0px;
+  left:100%;
+}
+.redmiph-inner{
+  top: 35px;
+  left:100%;
+}
+.audio-inner{
+  top: 70px;
+  left:100%;
+}
+
+.menu-top:nth-child(4) ::after{
+  content:'NEW!'; 
+  width: 22px;
+  height: 8px;
+  padding: 2px;
+  background-color: #ff002b;
+  color: #fff;
+  font-size: 8px;
+  font-weight: 600;
+  position: absolute;
+  top: 0;
+  right: 30px;
+  bottom: 0;
+  margin: auto;
+}
+
+.menu-top:first-child::before{
+  content:''; 
+  width: 20px;
+  height: 20px;
+  background: url(../assets/images.png) no-repeat; 
+  background-size: cover; 
+  position: absolute;
+  top: 0;
+  left: 37px;
+  bottom: 0;
+  margin: auto;
+}
